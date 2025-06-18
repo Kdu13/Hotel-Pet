@@ -88,7 +88,7 @@
     width: 100%;
 }
 
-.texo1_secao_um{
+.texo1_secao_um {
     position: absolute;
     left: 70%;
     color: white;
@@ -105,26 +105,30 @@
 }
 
 .texto2_secao_um {
-    font-weight: 800;   
+    font-weight: 800;
     color: #7e4cb1;
 }
-.secao_dois{
+
+.secao_dois {
     background-color: #6041ac;
     color: white;
     text-align: center;
 }
-.secao_dois > h1, h2 {
+
+.secao_dois>h1,
+h2 {
     font-size: 3em;
     font-weight: 700;
-    padding: 3%;
+    padding: 1%;
 }
-.secao_dois > .servicos_disponiveis {
+
+.secao_dois>.servicos_disponiveis {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 10%;
 }
 
-.secao_dois > .servicos_disponiveis > .card {
+.secao_dois>.servicos_disponiveis>.card {
     background-color: #c2cdff;
     border-radius: 10px;
     padding: 3%;
@@ -134,7 +138,7 @@
     border: 1px solid rgba(0, 0, 0, 0.315);
 }
 
-.secao_dois > .servicos_disponiveis > .card h3 {
+.secao_dois>.servicos_disponiveis>.card h3 {
     color: #7e4cb1;
     font-weight: 700;
     font-size: 1.3em;
@@ -167,7 +171,7 @@ footer {
     color: white;
 }
 
-.superior_footer{
+.superior_footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -175,29 +179,47 @@ footer {
     border-bottom: 1px solid #7e4cb1;
 }
 
-.contatos > div{
+.contatos>div {
     display: flex;
     flex-direction: row;
     margin-top: 2%;
 }
-.contatos h2, div >
-p {
+
+.contatos h2,
+div>p {
     text-align: center;
     color: white;
 }
-.contatos h2{
+
+.contatos h2 {
     font-size: 1.2em;
 }
-.localizacao > a {
+
+.localizacao>a {
     text-decoration: none;
     font-size: 1em;
     color: white;
 }
-.direitos_autorais{
+
+.direitos_autorais {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
-   padding: 5% 0 1% 0;
+    padding: 5% 0 1% 0;
 }
+
 .header-mobile {
-  display: none;
+    display: none;
+}
+
+.servicos_disponiveis .card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.servicos_disponiveis .card:hover {
+    transform: scale(1.02);
+}
+
+.swiper-pagination {
+    display: none;
 }

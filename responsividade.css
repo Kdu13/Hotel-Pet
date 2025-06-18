@@ -1,46 +1,81 @@
+@media (max-width: 1330px) {
+  .superior_footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .superior_footer>img {
+    width: 70%;
+  }
+}
+
 @media (max-width: 1050px) {
+  .texo1_secao_um {
+    display: none;
+  }
+
+  .superior_footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .superior_footer>img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 950px) {
+  .superior_footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .superior_footer>img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
   .localizacao {
     display: none;
   }
-  .texo1_secao_um{
-    display: none;
+
+  .contatos>div {
+    flex-direction: column;
   }
 }
-@media (max-width: 950px) {
-    .superior_footer {
-        display: flex;
-        flex-direction: column;
-    }
-    .superior_footer > img {
-        width: 100%;
-    }
-}
-@media (min-width: 300px) and (max-width: 850px) {
-  .servicos_disponiveis{
+
+@media (min-width: 200px) and (max-width: 850px) {
+  .servicos_disponiveis {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: none;
-}
-.servicos_disponiveis > .card{
-    width: 80% !important;    
+  }
+
+  .servicos_disponiveis>.card {
+    width: 80% !important;
     margin: 5% 0;
-    
-}
-.produtos_disponiveis{
+
+  }
+
+  .produtos_disponiveis {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.produtos_disponiveis > .card{
-    
-    width: 80% !important;    
+  }
+
+  .produtos_disponiveis>.card {
+
+    width: 80% !important;
     margin: 5% 0;
   }
 
-  .secao_dois > h1, .secao_dois > h2 {
+  .secao_dois>h1,
+  .secao_dois>h2 {
     font-size: 1.5em;
   }
+
   .header_pc {
     display: none;
   }
@@ -82,7 +117,4 @@
     display: flex;
   }
 
-  .swiper-pagination{
-    display: none;
-  }
 }
