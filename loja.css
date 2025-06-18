@@ -1,0 +1,75 @@
+.secao_tres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.secao_tres > h2 {
+    font-size: 3em;
+    font-weight: 700;
+    padding: 1%;
+    color: #6041ac;
+}
+
+.swiper {
+  width: 95%;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: transparent;
+  color: transparent;
+  width: 2%;
+  height: 100%;
+  top: 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3%;
+    width: 60%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 60%;
+}
+
+.card button, .card button a {
+    background-color: #c2cdff;
+    border: none;
+    color: #6041ac;
+    padding: 1% 5%;
+    margin-top: 2%;
+    text-decoration: none;
+}
+
+.card button:hover {
+    cursor: pointer;
+    color: #7e4cb1;
+    box-shadow: 0 0 3px #7e4cb1;
+}
+
+.card h3, .card p {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #6041ac;
+}

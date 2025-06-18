@@ -1,0 +1,203 @@
+/* Cores: #6041ac #c2cdff #ffffff #7e4cb1 #a6b5ff */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.barra_navegacao {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c2cdff;
+}
+
+.barra_navegacao_caixa1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.barra_navegacao_caixa1>a {
+    color: #6041ac;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+    position: relative;
+}
+
+.barra_navegacao_caixa1>a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #6041ac;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.barra_navegacao_caixa1>a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.barra_navegacao_caixa2 {
+    display: flex;
+    align-items: center;
+    padding-right: 15%;
+}
+
+.barra_navegacao_caixa2>a {
+    color: #6041ac;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+    position: relative;
+}
+
+.barra_navegacao_caixa2>a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #6041ac;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.barra_navegacao_caixa2>a:hover::after {
+    transform: scaleX(1);
+}
+
+.secao_um {
+    position: relative;
+    background-color: #6041ac;
+}
+
+.imagem_secao_um {
+    width: 100%;
+}
+
+.texo1_secao_um{
+    position: absolute;
+    left: 70%;
+    color: white;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.texo1_secao_um {
+    top: 10%;
+    font-size: 3.5em;
+    font-weight: 900;
+    width: 60%;
+    color: #6041ac;
+}
+
+.texto2_secao_um {
+    font-weight: 800;   
+    color: #7e4cb1;
+}
+.secao_dois{
+    background-color: #6041ac;
+    color: white;
+    text-align: center;
+}
+.secao_dois > h1, h2 {
+    font-size: 3em;
+    font-weight: 700;
+    padding: 3%;
+}
+.secao_dois > .servicos_disponiveis {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
+}
+
+.secao_dois > .servicos_disponiveis > .card {
+    background-color: #c2cdff;
+    border-radius: 10px;
+    padding: 3%;
+    font-size: 1.2em;
+    width: 25%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+.secao_dois > .servicos_disponiveis > .card h3 {
+    color: #7e4cb1;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+
+
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px;
+    font-size: 20px;
+    background-color: #6041ac;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s ease;
+    z-index: 1001;
+}
+
+#btnTopo:hover {
+    background-color: #7e4cb1;
+}
+
+footer {
+    background-color: #6041ac;
+    color: white;
+}
+
+.superior_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid #7e4cb1;
+}
+
+.contatos > div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+.contatos h2, div >
+p {
+    text-align: center;
+    color: white;
+}
+.contatos h2{
+    font-size: 1.2em;
+}
+.localizacao > a {
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+}
+.direitos_autorais{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+   padding: 5% 0 1% 0;
+}
+.header-mobile {
+  display: none;
+}

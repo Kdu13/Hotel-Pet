@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="login.css">
+    <title>Cadastro HotelPet</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">HotelPet</a>
+    </header>
+    <main>
+        <div class="container_forms">
+            <div class="card">
+                <form action="" class="form_entrar">
+                    <input type="email" id="email_login" placeholder="E-mail*" required>
+                    <div class="campo_senha">
+  <input type="password" name="senha_login" id="senha_login" placeholder="Senha*" required>
+  <i class="fa-solid fa-eye toggle_senha" data-input="senha_login"></i>
+</div>
+
+                    <button type="button" onclick="continuar()" class="botao_entrar" disabled>Continuar</button>
+                    <a href="#" class="esqueci_senha">Esqueci minha senha</a>
+                    <button  class="botao_girar" type="button" onclick="girar()">Faça seu cadastro.</button>
+
+                    <article class="linha_ou">
+                        <hr>
+                        <span>ou</span>
+                        <hr>
+                    </article>
+
+
+                    <button type="button" onclick="entrar_apple()" class="entrar_apple" disabled>
+                        <i class="fab fa-apple"></i> Entrar com Apple
+                    </button>
+                </form>
+
+
+                <form action="" class="form_cadastro">
+                    <input type="email" id="email_cadastro" placeholder="E-mail*" required>
+                    <input type="text" id="nome" placeholder="Nome*" required>
+                    <input type="text" id="sobrenome" placeholder="Sobrenome*" required>
+                    <input type="tel" id="celular" placeholder="Celular*" required pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" title="Formato esperado: (11) 91234-5678">
+
+                    <div class="campo_senha">
+  <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Senha*" required>
+  <i class="fa-solid fa-eye toggle_senha" data-input="senha_cadastro"></i>
+</div>
+
+
+                    <article>
+                        <input type="checkbox" name="notificacao" id="notificacao">
+                        Desejo receber notificações via WhatsApp
+                    </article>
+
+                    <p>Ao se cadastrar, você concorda com:</p>
+
+                    <article>
+                        <input type="checkbox" name="termos_condicoes_privacidade" id="termos_condicoes_privacidade">
+                        Nossos Termos e condições de uso e Política de privacidade.
+                    </article>
+
+                    <button type="button" onclick="continuar()" class="botao_cadastrar" disabled>Continuar</button>
+                    <button type="button" onclick="girar()" class="botao_girar">Já tenho cadastro.</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

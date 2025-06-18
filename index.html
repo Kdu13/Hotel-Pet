@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loja.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>HotelPet</title>
+</head>
+
+<body>
+
+    <header class="header_pc">
+        <nav class="barra_navegacao">
+            <section class="barra_navegacao_caixa1">
+                <img src="imagens/Logos/Sem_Fundo.png" alt="Logo" width="15%">
+                <a href="#secao_dois">Serviços</a>
+                <a href="#secao_tres">Loja</a>
+                <a href="#footer">Contato</a>
+            </section>
+            <section class="barra_navegacao_caixa2">
+                <a href="formulario_login/login.html">Criar Conta ou Entrar</a>
+            </section>
+        </nav>
+    </header>
+    <header class="header-mobile">
+        <nav class="barra_navegacao_mobile">
+            <img src="imagens/Logos/Sem_Fundo.png" alt="Logo" width="30%">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="menu-mobile" id="menuMobile">
+            <a href="#secao_dois">Serviços</a>
+            <a href="#secao_tres">Loja</a>
+            <a href="#footer">Contato</a>
+            <a href="formulario_login/login.html">Criar Conta ou Entrar</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="secao_um">
+            <img src="imagens/Imagens/imagem1.png" alt="imagem_cachorro" class="imagem_secao_um">
+            <h1 class="texo1_secao_um">Precisa deixar seu pet com alguém? <b class="texto2_secao_um">Deixe com a
+                    Gente.</b></h1>
+        </section>
+
+        <section class="secao_dois" id="secao_dois">
+            <h1>O melhor hotel para seu pet!</h1>
+            <h2>Nossos Serviços</h2>
+            <div class="servicos_disponiveis">
+                <div class="card">
+                    <h3>Hospedagem</h3>
+                    <p>Ambientes confortáveis e seguros para cães e gatos de todos os tamanhos.</p>
+                </div>
+                <div class="card">
+                    <h3>Banho & Tosa</h3>
+                    <p>Serviço completo de higiene com profissionais experientes.</p>
+                </div>
+                <div class="card">
+                    <h3>Day Care</h3>
+                    <p>Cuidados durante o dia com atividades recreativas para seu pet.</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="secao_tres" id="secao_tres">
+            <h2>Loja</h2>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card">
+                        <h3>Camisa HotelPet - Branca</h3>
+                        <img src="imagens/mockup/camisa_branca.png" alt="Camisa Branca HotelPet" />
+                        <p>R$ 100,00</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="swiper-slide card"> <h3>Camisa HotelPet - Roxa</h3>
+                        <img src="imagens/mockup/camisa_roxa.png" alt="Camisa Branca HotelPet" />
+                        <p>R$ 100,00</p>
+                        <button>Comprar</button></div>
+                    <div class="swiper-slide card"> <h3>Boné HotelPet - Roxo</h3>
+                        <img src="imagens/mockup/boné_roxo.png" alt="Camisa Branca HotelPet" />
+                        <p>R$ 50,00</p>
+                        <button>Comprar</button></div>
+                    <div class="swiper-slide card"> <h3>Pingente HotelPet - Roxo</h3>
+                        <img src="imagens/mockup/pingente_roxo.png" alt="Camisa Branca HotelPet" />
+                        <p>R$ 100,00</p>
+                        <button>Comprar</button></div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <button id="btnTopo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <footer id="footer">
+        <section class="superior_footer">
+            <img src="imagens/Logos/Roxo.png" alt="logo">
+            <section class="contatos">
+                <h2>Entre em Contato</h2>
+                <div>
+                    <p>(13) 99999-9999</p>
+                    <p>(13) 99999-9999</p>
+                </div>
+            </section>
+            <section class="localizacao">
+                <a href="https://www.google.com.br/maps/place/Fatec+Praia+Grande/@-24.0052631,-46.4149294,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce1db2e586da8d:0x271ae3e10bdc671e!8m2!3d-24.0052631!4d-46.4123545!16s%2Fg%2F120htmyt?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank">Praça
+                    19 de Janeiro, 144 - Boqueirão, Praia Grande</a>
+            </section>
+        </section>
+        <section class="direitos_autorais">
+            <p> 2025 HotelPet &copy;Todos os direitos reservados.</p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

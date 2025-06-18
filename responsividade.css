@@ -1,0 +1,88 @@
+@media (max-width: 1050px) {
+  .localizacao {
+    display: none;
+  }
+  .texo1_secao_um{
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+    .superior_footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .superior_footer > img {
+        width: 100%;
+    }
+}
+@media (min-width: 300px) and (max-width: 850px) {
+  .servicos_disponiveis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+.servicos_disponiveis > .card{
+    width: 80% !important;    
+    margin: 5% 0;
+    
+}
+.produtos_disponiveis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produtos_disponiveis > .card{
+    
+    width: 80% !important;    
+    margin: 5% 0;
+  }
+
+  .secao_dois > h1, .secao_dois > h2 {
+    font-size: 1.5em;
+  }
+  .header_pc {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+    background-color: #c2cdff;
+    padding: 2% 10%;
+  }
+
+  .barra_navegacao_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .menu-mobile {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    background-color: #c2cdff;
+    padding: 10px;
+  }
+
+  .menu-mobile a {
+    padding: 10px 0;
+    color: #6041ac;
+    text-decoration: none;
+  }
+
+  .menu-mobile.ativo {
+    display: flex;
+  }
+
+  .swiper-pagination{
+    display: none;
+  }
+}
