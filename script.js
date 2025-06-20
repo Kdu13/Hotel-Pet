@@ -34,6 +34,10 @@ let swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true
@@ -52,3 +56,24 @@ let swiper = new Swiper(".mySwiper", {
   }
 });
 
+const swiperContainer = document.querySelector('.mySwiper');
+swiperContainer.addEventListener('mouseenter', () => {
+  swiper.autoplay.stop();
+});
+swiperContainer.addEventListener('mouseleave', () => {
+  swiper.autoplay.start();
+});
+
+
+
+
+document.querySelectorAll('.servicos_disponiveis .card').forEach(card => {
+  card.addEventListener('click', () => {
+    const nomeServico = card.querySelector('h3')?.innerText || 'serviço';
+
+    const mensagem = `Gostaria desse serviço: ${nomeServico}`;
+    const url = `https://wa.me/5513999999999?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, '_blank');
+  });
+});
